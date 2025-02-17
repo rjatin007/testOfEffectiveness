@@ -1,6 +1,5 @@
 import { useResponseStore } from "@/stores/responseStore";
 import { getPersonalityType } from "@/utils/responses";
-import { Button } from "@heroui/button";
 
 function Results() {
   const selfDisclosureScore = useResponseStore(
