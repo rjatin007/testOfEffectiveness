@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+import { Analytics } from "@vercel/analytics/next";
 
 import { Providers } from "./providers";
 
@@ -42,6 +43,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <main className="  mx-0  py-6 px-4 flex-grow bg-violet-900 h-screen overflow-y-hidden w-[calc(100%)]">
             {children}
+            <Analytics />
           </main>
         </Providers>
       </body>
